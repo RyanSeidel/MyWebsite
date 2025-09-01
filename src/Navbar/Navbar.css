@@ -1,0 +1,44 @@
+/* Main navbar container */
+.navbar {
+  display: flex; /* Use flexbox for easy alignment */
+  justify-content: flex-end;
+  align-items: center; /* Vertically aligns everything */
+  background-color: #cccc; 
+  padding: 1rem 2rem; /* Add some spacing */
+  position: sticky; /* Make it stick to the top on scroll */
+  top: 0;
+  width: 100%;
+  box-sizing: border-box; /* Important for keeping padding within the 100% width */
+  z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+
+/* Styling for the list of links */
+.navbar-links {
+  list-style: none; /* Remove default bullet points */
+  display: flex; /* Align links in a row */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Spacing between each link */
+.navbar-links li {
+  margin-left: 25px;
+}
+
+/* Styling for the actual link text */
+.navbar-links a {
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding-bottom: 5px; /* Space for the hover effect */
+  transition: color 0.3s ease-in-out, border-bottom-color 0.3s ease-in-out; /* Smooth transitions */
+}
+
+/* Simple hover effect to give user feedback */
+.navbar-links a:hover {
+  color: #3498db; /* A nice blue for hover */
+  border-bottom: 2px solid #3498db; /* Underline effect on hover */
+}

@@ -1,0 +1,39 @@
+/* src/Hero.css */
+
+.hero-container {
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+
+  /* --- Flexbox Properties --- */
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center; /* Centers everything vertically */
+  align-items: center; /* Centers everything horizontally */
+}
+
+.hero-text {
+  text-align: center; /* Ensures text inside the box is centered */
+  margin-bottom: 2rem; /* Adds space between the text and the button */
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #c7c7c7;
+}
+
+.cta-button {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+}
